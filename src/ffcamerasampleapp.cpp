@@ -132,6 +132,7 @@ void FFCameraSampleApp::onWindowAttached(unsigned long handle, const QString &gr
     i = -1;
     screen_set_window_property_iv(win, SCREEN_PROPERTY_ZORDER, &i);
 
+    // scale the viewfinder window to fit the display
     int size[] = {768, 1280};
     screen_set_window_property_iv(win, SCREEN_PROPERTY_SIZE, size);
 
