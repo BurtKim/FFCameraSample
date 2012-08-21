@@ -346,7 +346,7 @@ void display_frame(ffdec_context *ffd_context, AVFrame *frame)
 
     unsigned char *y = ptr;
     unsigned char *u = y + (height * stride);
-    unsigned char *v = u + ((height / 2) * (stride / 2));
+    unsigned char *v = u + (height * stride) / 4;
 
     for (int i = 0; i < height; i++)
     {
