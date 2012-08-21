@@ -334,11 +334,10 @@ void display_frame(ffdec_context *ffd_context, AVFrame *frame)
     int stride = view->stride;
 
     unsigned char *ptr = NULL;
+    screen_get_buffer_property_pv(screen_pixel_buffer, SCREEN_PROPERTY_POINTER, (void**) &ptr);
 
     int width = frame->width;
     int height = frame->height;
-
-    screen_get_buffer_property_pv(screen_pixel_buffer, SCREEN_PROPERTY_POINTER, (void**) &ptr);
 
     uint8_t *srcy = frame->data[0];
     uint8_t *srcu = frame->data[1];
