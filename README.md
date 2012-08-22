@@ -2,6 +2,10 @@ FFCameraSample uses the native camera API to record video. However instead of us
 
 The FFmpeg related functionality is provided through [libffbb](https://github.com/hardisonbrewing/libffbb) which has been copied into the `src` directory. See libffbb for instructions on building FFmpeg.
 
+Demo Video:  
+[http://www.youtube.com/watch?v=baOL5EJrJ9U](http://www.youtube.com/watch?v=baOL5EJrJ9U)*  
+* This was the initial demo video. The playback lag should be fixed.
+
 Related support forum post:  
 [Camera API NV12 frame to AVFrame (FFmpeg)](http://supportforums.blackberry.com/t5/Native-Development/Camera-API-NV12-frame-to-AVFrame-FFmpeg/td-p/1842089)
 
