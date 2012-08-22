@@ -1,4 +1,4 @@
-FFCameraSample uses the native camera API to record video. However instead of using the platform encoder to write to an MP4 file, this app will use FFmpeg to write out to an MPEG-2 file. This app currently only records video and not audio.
+FFCameraSample uses the native camera API to record video. However instead of using the platform encoder to write to an MP4 file, this app will use FFmpeg to write out to an MPEG-2 file. This app currently only records video and not audio. During recording the video file will be read, decoded and displayed on the screen.
 
 The FFmpeg related functionality is provided through [libffbb](https://github.com/hardisonbrewing/libffbb) which has been copied into the `src` directory. See libffbb for instructions on building FFmpeg.
 
